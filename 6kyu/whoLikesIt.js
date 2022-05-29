@@ -11,6 +11,8 @@
 // Note: For 4 or more names, the number in "and 2 others" simply increases.
 
 
+
+
 function likes(names) {
     if(names.length > 3){
       let numLessTwo = names.length - 2;
