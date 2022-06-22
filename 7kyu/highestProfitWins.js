@@ -1,0 +1,3 @@
+function minMax(arr){
+    arr.sort((a,b) => a-b)
+    return Array(arr[0], arr[arr.length-1])
