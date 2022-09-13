@@ -23,5 +23,5 @@ function contamination(text, char){
 
 // Example: see description
 
-// Pseudocode:
+
 
