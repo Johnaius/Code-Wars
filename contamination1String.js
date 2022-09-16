@@ -21,7 +21,7 @@ function contamination(text, char){
 
 // Results:  string text.length in length made up of char
 
-// Example: see description
+// Example: see descriptio
 
 
 
