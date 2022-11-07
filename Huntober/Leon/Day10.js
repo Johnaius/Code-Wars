@@ -13,7 +13,9 @@
         if(orgArr.length === mixArr.length){
             return 0
         }else{
-            return orgArr.reduce(( a, b ) => a + b ) - mixArr.reduce(( a, b )=> a + b )
+            sumOrgArr = orgArr.reduce(( a, b ) => a + b )
+            sumMixArr = mixArr.reduce(( a, b ) => a + b )
+            return sumOrgArr- sumMixArr
             }
         }
 
