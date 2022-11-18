@@ -9,8 +9,10 @@
 // The input array's length > 1
 
 function averageLength(arr) { 
-    let avgLengthOfElementsInArr = Math.round(arr.reduce(( a , c ) => a + c.length, 0)/ arr.length ) 
-    return arr.map(x => x[0].repeat(avgLengthOfElementsInArr)) 
+    let countArr = []
+    arr.forEach(ele => countArr.push(ele.length))
+    let avgLengthOfElementsInArr = Math.round(countArr.reduce(( a, c )=> a + c, 0)/ arr.length ) 
+   return arr.map(x => x[0].repeat(avgLengthOfElementsInArr)) 
   }
 
 
