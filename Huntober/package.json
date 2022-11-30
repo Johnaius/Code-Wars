@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'huntober'"
+    "test": "mocha 'Day16.js'"
   },
   "author": "",
   "license": "ISC"
