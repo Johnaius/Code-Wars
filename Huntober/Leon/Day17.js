@@ -19,8 +19,6 @@ function absentVowel(str){
             return `${i}, missing ${vowelArr[i]}`
         }
     }
-   console.log(absentVowel('Bb Smith sent us six neatly arranged range bicycles')) 
-   console.log(absentVowel('John Doe hs seven red pples under his bsket')) 
 
 const assert = require('assert');
 describe("Huntober Challenge november 29:", () => {
