@@ -19,26 +19,32 @@
 // All the characters of jewels are unique.
 
 function diamondInTheRough(jewels, stones) {
-//    let count= 0
-//     for(let j = 0; j < jewels.length; j++){
-//         for(let s = 0; s < stones.length; s++){
-//             if(jewels[j].includes(stones[s])){
-//                 count++
-//             }
-//         }
-//     }
-//     return count
-let counter = 0;
-stones.split('').forEach(element => {
-    jewels.indexOf(element) >= 0 ? counter ++ : counter 
-});
-return counter;
-
+   let count= 0
+    for(let j = 0; j < jewels.length; j++){
+        for(let s = 0; s < stones.length; s++){
+            if(jewels[j].includes(stones[s])){
+                count++
+            }
+        }
+    }
+    return count
 };
 console.log(diamondInTheRough("aA","aAAbbbb"), 3)
 
-let counter = 0;
-S.split('').forEach(element => {
-    J.indexOf(element) >= 0 ? counter ++ : counter 
-});
-return counter;
+function findJewels(jewels,stones){
+    const map = {}
+    let count = 0
+  
+    for(const jewel of jewels){
+      map[jewel] = true
+    }
+  
+    for(const stone of stones){
+      if( map[stone] ){
+        count++
+      }
+    }
+    return count
+  }
+  
+  console.log(findJewels("aA","aAAbbbb"), "3")
