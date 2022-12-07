@@ -19,3 +19,18 @@ function count (string) {
     string.split('').forEach(e => answerObj[e] = (answerObj[e] || 0) + 1);
     return answerObj;
  }
+
+
+ function countChars(str){
+    //create obj
+    let countObj = {}
+    
+    for(const c of str){
+        if (countObj[c]){
+            countObj[c]++
+        }else{
+            countObj[c=1]
+        }
+    }
+    return countObj
+ }
