@@ -12,3 +12,20 @@
 
 // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 // Output: true
+
+
+function containsDuplicate(nums){
+    map = {}
+    for(const num of nums){
+        map[num] = map[num] +1 || 1
+    }
+    duplicate = false
+    for(const num in map){
+        if(map[num] > 1){
+          duplicate = true
+        }
+    }
+    return duplicate
+}
+console.log(containsDuplicate([1,1,1,3,3,4,3,2,4,2]), true)
+console.log(containsDuplicate([1,2,3,4]), false)
