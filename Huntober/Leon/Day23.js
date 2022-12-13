@@ -19,7 +19,7 @@ function containsDuplicate(nums){
     for(const num of nums){
         map[num] = map[num] +1 || 1
     }
-    duplicate = false
+    let duplicate = false
     for(const num in map){
         if(map[num] > 1){
           duplicate = true
