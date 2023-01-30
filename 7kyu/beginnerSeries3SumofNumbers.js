@@ -10,3 +10,25 @@
 // (-1, 0) --> -1 (-1 + 0 = -1)
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 // Your function should only return a number, not the explanation about how you get that number.
+
+
+function getSum(a, b){
+    let count = 0
+     if(a === b){
+       return a
+     }else if(a < b){
+       for(let i = a; i <= b; i++){
+       if(count === 0){
+           count = i
+       }else{ count = count + i}
+  }
+     }else{
+       for(let i = b; i <= a; i++){
+       if(count === 0){
+           count = i
+       }else{ count = count + i}
+  }
+     }
+    return count
+  }
+  
