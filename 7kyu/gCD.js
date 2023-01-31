@@ -5,4 +5,14 @@
     function mygcd(x,y){
         if(y===0)return x;
       return mygcd(y,x%y);
+    }   
+
+
+    function mygcd(x,y){
+        for(let i = Math.min(x,y), i > 0; i--){
+            if(x % i === 0 && y % i === 0){
+                return i
+            }
+        }
+
     }
