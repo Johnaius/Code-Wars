@@ -1,3 +1,5 @@
+// Currying
+
 function multiply(a) {
     return function (b) {
       return function (c) {
@@ -11,3 +13,5 @@ function multiply(a) {
   const result = triple(double(4)(5))(1);
   
   console.log(result); // Output: 120
+
+  
