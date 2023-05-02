@@ -44,3 +44,23 @@ function inventoryList() {
     return { add, remove, getList };
   }
 
+
+  //student inventory list
+
+  // Function to manipulate a student record based on the provided operation
+function manipulateStudentRecord(obj, operation, prop, newValue) {
+    if (operation === 'delete') {
+        // If the operation is 'delete'
+        if (obj && obj.hasOwnProperty(prop)) {
+            // Check if the object exists and has the specified property
+            delete obj[prop]; // Delete the property from the object
+        }
+    } else if (operation === 'edit') {
+        // If the operation is 'edit'
+        if (obj && obj.hasOwnProperty(prop)) {
+            // Check if the object exists and has the specified property
+            obj[prop] = newValue; // Update the value of the property with the new value
+        }
+    }
+    return obj; // Return the modified or unmodified object
+}
